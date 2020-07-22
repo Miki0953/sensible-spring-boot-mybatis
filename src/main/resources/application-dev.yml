@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application: sensible-mybatis-spring-boot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springdb?serverTimezone=UTC
+    username: root
+    password: root
+debug: false
+
+# 如果映射文件跟mapper接口在同一路径下，就无须配置这一参数
+#mybatis:
+#  mapper-locations: classpath:com/sensible/model/*Mapper.xml
